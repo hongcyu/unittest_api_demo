@@ -6,7 +6,7 @@ project_path.py
 
 '''
 import os
-
+import time
 # 获取当前目录的最大路径
 project_path =os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 
@@ -18,7 +18,9 @@ test_case_path = os.path.join(project_path,'data','data_http.xlsx')
 #测试报告路径
 if not os.path.exists(project_path + r'\report'):
     os.mkdir(project_path + r'\report')
-report_path = os.path.join(project_path,'report','test_http_report.html')
+t = time.localtime()
+t = time.strftime("%m-%d_%H:%M:%S",t)
+report_path = os.path.join(project_path,'report','test_report'+t+'.html')
 
 #配置文件路径
 if not os.path.exists(project_path + r'\config'):
