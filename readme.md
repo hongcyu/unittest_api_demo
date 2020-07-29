@@ -20,7 +20,6 @@ ddt官方文档：https://ddt.readthedocs.io/en/latest/
 
 ### 第三方模块:
 
-需要pip安装
 
 1. ddt
 2. openpyxl

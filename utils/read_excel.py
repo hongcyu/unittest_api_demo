@@ -20,11 +20,36 @@ class Read_the_excel(object):
         test_data = []
         for mode in modes:
             sheet = wb[mode]
-            print(sheet)
+            if modes[mode] == 'all':
+                for row in range(2,sheet.max_row +1):
+                    tmp_data = dict()
+                    tmp_data['sheet_name'] = mode
+                    tmp_data[sheet.cell(1,1).value] = sheet.cell(row,1).value
+                    tmp_data[sheet.cell(1,2).value] = sheet.cell(row,2).value
+                    tmp_data[sheet.cell(1,3).value] = sheet.cell(row,3).value
+                    tmp_data[sheet.cell(1,4).value] = sheet.cell(row,4).value
+                    tmp_data[sheet.cell(1,5).value] = sheet.cell(row,5).value
+                    test_data.append(tmp_data)
+            else:
+                for case_id in modes[mode]:
+                    tmp_data = dict()
+                    tmp_data['sheet_name'] = mode
+                    tmp_data[sheet.cell(1,1).value] = sheet.cell(case_id+1,1).value
+                    tmp_data[sheet.cell(1,2).value] = sheet.cell(case_id+1,2).value
+                    tmp_data[sheet.cell(1,3).value] = sheet.cell(case_id+1,3).value
+                    tmp_data[sheet.cell(1,4).value] = sheet.cell(case_id+1,4).value
+                    tmp_data[sheet.cell(1,5).value] = sheet.cell(case_id+1,5).value
+                    test_data.append(tmp_data)
+
+        return test_data
+    
+    @staticmethod
+    def write_excel(date_config,sheet_name,row,result,TestResult):
+        pass
 
 data_path = project_path.test_case_path
 config_path = project_path.config_path
 
 excel = Read_the_excel.get_data(data_path,config_path)
 
-
+print(excel)
