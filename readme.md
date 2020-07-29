@@ -1,5 +1,5 @@
 ## unittest_demo
-
+###v1.0
 以下是项目的frame以及讲解：
 
 ![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/frame.png)
@@ -20,8 +20,10 @@ ddt官方文档：https://ddt.readthedocs.io/en/latest/
 
 ### 第三方模块:
 
-
 1. ddt
 2. openpyxl
-
+3. requests
 等待更新...
+
+###v1.1
+1. 添加自动识别行列属性
