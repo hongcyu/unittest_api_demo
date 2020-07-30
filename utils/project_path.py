@@ -8,7 +8,7 @@ project_path.py
 import os
 import time
 # 获取当前目录的最大路径
-project_path =os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
+project_path = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 
 #测试数据的路径
 if not os.path.exists(project_path + r'\data'):
