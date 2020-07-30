@@ -10,12 +10,12 @@ import requests
 
 class Http_request(object):
     @staticmethod
-    def http_request(url,method,excepted=None,cookie=None):
+    def http_request(url,data,method,excepted=None,cookie=None):
         if method.lower() == 'get':
-            res = requests.get(url,data = None,cookie = cookie,verify = False)
+            res = requests.get(url,data = None,cookies = cookie,verify = False)
             #verify忽略ssl证书警告
         else:
-            res = requests.post(url,data,cookie = cookie,verify=False)
+            res = requests.post(url,data,cookies = cookie,verify=False)
 
         return res
 

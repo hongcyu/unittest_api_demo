@@ -18,6 +18,8 @@ class Read_config(object):
         return config[section][option]
 
 if __name__ == "__main__":
-    cf = Read_config.get_config(project_path.config_path,'MODE','mode')
-    print(cf)
+    pass
+    # cf = Read_config.get_config(project_path.config_path,'MODE','mode')
+    # print(cf)
+    
     
