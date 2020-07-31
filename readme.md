@@ -1,7 +1,7 @@
 ## unittest_api_demo
 ### 项目框架
 
-![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/frame1.png)
+![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/frame2.png)
 
 tree:
 
