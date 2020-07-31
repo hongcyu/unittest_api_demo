@@ -32,7 +32,7 @@ tree:
    加上encoding='utf-8'
    ```
 
-   ![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/test_report2.png)
+   ![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/test_report4.png)
 
 
 
