@@ -18,10 +18,11 @@ test_case_path = os.path.join(project_path,'data','data_http.xlsx')
 #测试报告路径
 if not os.path.exists(project_path + r'\report'):
     os.mkdir(project_path + r'\report')
-t = time.localtime()
-t = time.strftime("%m-%d_%H:%M:%S",t)
-report_path = os.path.join(project_path,'report','test_report'+t+'.html')
-
+##以时间命名
+# t = time.localtime()
+# t = time.strftime(r"_%m_%d_%H_%M_%S",t)
+#report_path = os.path.join(project_path,'report','test_report'+t+'.html')
+report_path = os.path.join(project_path,"report",'report.html')
 #配置文件路径
 if not os.path.exists(project_path + r'\config'):
     os.mkdir(project_path + r'\config')

@@ -1,0 +1,30 @@
+
+Running tests... 
+----------------------------------------------------------------------
+ test_api_1 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.299765)s
+ test_api_2 (test_case.test_http_request.TestHttpRequest) ... OK (0.180019)s
+ test_api_3 (test_case.test_http_request.TestHttpRequest) ... OK (0.189065)s
+ test_api_4 (test_case.test_http_request.TestHttpRequest) ... OK (0.212225)s
+ test_api_5 (test_case.test_http_request.TestHttpRequest) ... OK (0.188310)s
+ test_api_6 (test_case.test_http_request.TestHttpRequest) ... OK (0.193721)s
+
+======================================================================
+ERROR [0.299765s]: test_case.test_http_request.TestHttpRequest.test_api_1
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "f:\code\unittest_api_demo\test_case\test_http_request.py", line 34, in test_api
+    self.assertEqual(item['expected'],res.json()['info'])
+KeyError: 'info'
+F:\python\lib\site-packages\urllib3\connectionpool.py:981: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.ketangpai.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
+
+----------------------------------------------------------------------
+Ran 6 tests in 0:00:01
+
+FAILED
+ (Errors=1)
+
+Generating HTML reports... 
+report\test_api≤‚ ‘±®∏Ê_test_case.test_http_request.TestHttpRequest.html

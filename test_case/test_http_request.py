@@ -6,6 +6,7 @@ import os
 sys.path.append(".")
 sys.path.append("..")
 sys.path.append("utils")
+
 #添加环境变量防止出错
 import unittest
 from ddt import ddt,data
@@ -28,7 +29,7 @@ class TestHttpRequest(unittest.TestCase):
         item['method'])
 
         if res.cookies:
-            global cookie = res.cookies
+            pass
         try:
             self.assertEqual(item['expected'],res.json()['info'])
             
