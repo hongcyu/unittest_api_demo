@@ -18,7 +18,7 @@ loader = unittest.TestLoader()
 suite.addTest(loader.loadTestsFromTestCase(TestHttpRequest))
 #说明：unittest.TestLoader().loadTestsFromTestCase(类名)
 file_name = report_path
-with open(file_name,"w") as f :
+with open(file_name,"w",encoding="utf-8") as f :
     runner = HTMLTestRunner(
         stream=f,
         verbosity=2,
