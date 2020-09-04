@@ -25,15 +25,15 @@ class Read_the_excel(object):
                 for row in range(2,sheet.max_row +1):
                     tmp_data = dict()
                     tmp_data['sheet_name'] = mode
-                    for culumn in range(1,sheet.max_column+1):
-                        tmp_data[sheet.cell(1,culumn).value] = sheet.cell(row,culumn).value
+                    for column in range(1,sheet.max_column+1):
+                        tmp_data[sheet.cell(1,column).value] = sheet.cell(row,column).value
                     test_data.append(tmp_data)
             else:
                 for case_id in modes[mode]:
                     tmp_data = dict()
                     tmp_data['sheet_name'] = mode
-                    for culumn in range(1,sheet.max_column+1):
-                        tmp_data[sheet.cell(1,culumn).value] = sheet.cell(case_id + 1,culumn).value
+                    for column in range(1,sheet.max_column+1):
+                        tmp_data[sheet.cell(1,column).value] = sheet.cell(case_id + 1,column).value
                     test_data.append(tmp_data)
 
         return test_data
