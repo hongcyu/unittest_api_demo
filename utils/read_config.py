@@ -7,7 +7,7 @@ read_config.py
 '''
 
 import configparser
-import project_path
+import init_path
 
 class Read_config(object):
 
@@ -19,7 +19,7 @@ class Read_config(object):
 
 if __name__ == "__main__":
     pass
-    # cf = Read_config.get_config(project_path.config_path,'MODE','mode')
+    # cf = Read_config.get_config(init_path.config_path,'MODE','mode')
     # print(cf)
     
     

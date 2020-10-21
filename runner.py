@@ -9,21 +9,18 @@ import os
 import unittest
 from HtmlTestRunner import HTMLTestRunner
 from test_case.test_http_request import TestHttpRequest
-from utils.project_path import *
-
-
+from utils import init_path
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
-
 suite.addTest(loader.loadTestsFromTestCase(TestHttpRequest))
 #说明：unittest.TestLoader().loadTestsFromTestCase(类名)
-file_name = report_path
+file_name = init_path.report_path
 with open(file_name,"w",encoding="utf-8") as f :
     runner = HTMLTestRunner(
         stream=f,
         verbosity=2,
         output="./report/",
-        report_title="test_api_test_report",
+        report_title="api_test_report",
         report_name="test_api测试报告",
         add_timestamp=False,    #取消命名时间戳
         open_in_browser=True    #浏览器自动打开

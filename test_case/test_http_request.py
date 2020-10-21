@@ -10,10 +10,10 @@ sys.path.append("utils")
 #添加环境变量防止出错
 import unittest
 from ddt import ddt,data
-from utils.project_path import *
 from utils import read_excel
 from utils import read_config
 from utils import http_request
+from utils.init_path import test_case_path,config_path
 
 cookie = None
 test_data = read_excel.Read_the_excel.get_data(test_case_path,config_path)
@@ -32,7 +32,6 @@ class TestHttpRequest(unittest.TestCase):
             pass
         try:
             self.assertEqual(item['expected'],res.json()['info'])
-            
             TestResult = 'PASS'
         except AssertionError as e:
             TestResult = 'FAILED'

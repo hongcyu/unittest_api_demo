@@ -6,10 +6,9 @@ read_excel.py
 新建excel文件时不可以在项目内部直接建,否则会报错
 自动识别行列
 '''
-
-import project_path
 from read_config import Read_config
 from openpyxl import load_workbook
+import init_path
 
 class Read_the_excel(object):
     #读取excel的内容
@@ -43,7 +42,9 @@ class Read_the_excel(object):
     def write_excel(data_path,sheet_name,row,result,TestResult):
         pass
 
-# data_path = project_path.test_case_path
-# config_path = project_path.config_path
-# excel = Read_the_excel.get_data(data_path,config_path)
-# print(excel)
+if __name__ == "__main__":
+    pass
+    # data_path = init_path.test_case_path
+    # config_path = init_path.config_path
+    # excel = Read_the_excel.get_data(data_path,config_path)
+    # print(excel)

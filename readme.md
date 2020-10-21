@@ -3,6 +3,8 @@
 
 ![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/frame2.png)
 
+（project_path.py改名为init_path.py)
+
 tree:
 
 ![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/test_tree1.png)
