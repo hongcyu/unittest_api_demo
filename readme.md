@@ -1,9 +1,7 @@
 ## unittest_api_demo
 ### 项目框架
 
-![](https://cdn.jsdelivr.net/gh/hongcyu/image/images/frame2.png)
-
-（project_path.py改名为init_path.py)
+![image-20201025222533960](https://gitee.com/hongcyu/image/raw/master/images/image-20201025222533960.png)
 
 tree:
 
