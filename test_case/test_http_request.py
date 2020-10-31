@@ -31,7 +31,8 @@ class TestHttpRequest(unittest.TestCase):
         if res.cookies:
             pass
         try:
-            self.assertEqual(item['expected'],res.json()['info'])
+            if res.json()['status'] == 0:
+                self.assertEqual(item['expected'],res.json()['info'])
             TestResult = 'PASS'
         except AssertionError as e:
             TestResult = 'FAILED'

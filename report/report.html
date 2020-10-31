@@ -1,29 +1,17 @@
 
 Running tests... 
 ----------------------------------------------------------------------
- test_api_1 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.745489)s
- test_api_2 (test_case.test_http_request.TestHttpRequest) ... OK (0.274168)s
- test_api_3 (test_case.test_http_request.TestHttpRequest) ... OK (0.298048)s
- test_api_4 (test_case.test_http_request.TestHttpRequest) ... OK (0.312907)s
- test_api_5 (test_case.test_http_request.TestHttpRequest) ... OK (0.397650)s
- test_api_6 (test_case.test_http_request.TestHttpRequest) ... OK (0.391228)s
- test_api_7 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.000492)s
- test_api_8 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.000171)s
+ test_api_1 (test_case.test_http_request.TestHttpRequest) ... OK (0.292176)s
+ test_api_2 (test_case.test_http_request.TestHttpRequest) ... OK (0.283256)s
+ test_api_3 (test_case.test_http_request.TestHttpRequest) ... OK (0.137433)s
+ test_api_4 (test_case.test_http_request.TestHttpRequest) ... OK (0.146351)s
+ test_api_5 (test_case.test_http_request.TestHttpRequest) ... OK (0.136567)s
+ test_api_6 (test_case.test_http_request.TestHttpRequest) ... OK (0.145847)s
+ test_api_7 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.001020)s
+ test_api_8 (test_case.test_http_request.TestHttpRequest) ... ERROR (0.000000)s
 
 ======================================================================
-ERROR [0.745489s]: test_case.test_http_request.TestHttpRequest.test_api_1
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "E:\python372\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "d:\programming\testing\unittest_api_demo\test_case\test_http_request.py", line 34, in test_api
-    self.assertEqual(item['expected'],res.json()['info'])
-KeyError: 'info'
-E:\python372\lib\site-packages\urllib3\connectionpool.py:986: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.ketangpai.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-  InsecureRequestWarning,
-
-======================================================================
-ERROR [0.000492s]: test_case.test_http_request.TestHttpRequest.test_api_7
+ERROR [0.001020s]: test_case.test_http_request.TestHttpRequest.test_api_7
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "E:\python372\lib\site-packages\ddt.py", line 182, in wrapper
@@ -33,7 +21,7 @@ Traceback (most recent call last):
 TypeError: eval() arg 1 must be a string, bytes or code object
 
 ======================================================================
-ERROR [0.000171s]: test_case.test_http_request.TestHttpRequest.test_api_8
+ERROR [0.000000s]: test_case.test_http_request.TestHttpRequest.test_api_8
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "E:\python372\lib\site-packages\ddt.py", line 182, in wrapper
@@ -43,10 +31,10 @@ Traceback (most recent call last):
 TypeError: eval() arg 1 must be a string, bytes or code object
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0:00:02
+Ran 8 tests in 0:00:01
 
 FAILED
- (Errors=3)
+ (Errors=2)
 
 Generating HTML reports... 
 report\test_api测试报告_test_case.test_http_request.TestHttpRequest.html

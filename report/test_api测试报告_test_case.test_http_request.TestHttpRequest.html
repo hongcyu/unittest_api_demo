@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">api_test_report</h2>
-                <p class='attribute'><strong>Start Time: </strong>2020-10-21 10:30:48</p>
-                <p class='attribute'><strong>Duration: </strong>2.42 s</p>
-                <p class='attribute'><strong>Summary: </strong>Total: 8, Pass: 5, Error: 3</p>
+                <p class='attribute'><strong>Start Time: </strong>2020-10-31 10:21:13</p>
+                <p class='attribute'><strong>Duration: </strong>1.14 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 8, Pass: 6, Error: 2</p>
             </div>
         </div>
         <div class="row">
@@ -27,25 +27,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class='warning'>
+                        <tr class='success'>
                             <td class="col-xs-10">test_api_1</td>
                             <td class="col-xs-1">
-                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
                             </td>
                             <td class="col-xs-1">
                                 <button class="btn btn-default btn-xs">View</button>
                             </td>
                         </tr>
                         <tr style="display:none;">
-                            <td class="col-xs-9" colspan="3"><p>获取的结果为{'status': 1, 'url': '/Main/index.html', 'token': 'MDAwMDAwMDAwMMurrpWavLehhs1-lbO5gZOE3YuWepuomcWmmqaMiHtnr5ylzYWosKKZq6HQxtOK0ZCme5p-haiZu2yrn4uNhJ3KedDYk7ivboS4jtux34GRhN2DlICKYW0', 'isenterprise': 0, 'uid': 'MDAwMDAwMDAwMLSGz92Hz8lqhctyoQ'}
-</p><p style="color:maroon;">KeyError: 'info'</p><p style="color:maroon;">Traceback (most recent call last):
-  File "E:\python372\lib\site-packages\ddt.py", line 182, in wrapper
-    return func(self, *args, **kwargs)
-  File "d:\programming\testing\unittest_api_demo\test_case\test_http_request.py", line 34, in test_api
-    self.assertEqual(item['expected'],res.json()['info'])
-KeyError: 'info'
-E:\python372\lib\site-packages\urllib3\connectionpool.py:986: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.ketangpai.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-  InsecureRequestWarning,
+                            <td class="col-xs-9" colspan="3"><p>获取的结果为{'status': 1, 'url': '/Main/index.html', 'token': 'MDAwMDAwMDAwMMurrpWavLehhs1-lbO5gZOE3YuWepuomcWmmqaMiHtnr5ylzYWosKKZq6HQxtOK0ZCme5p-haiZu2yrn4uNhJ3KedDYk7ivboS4jtuyqX3Zg6eZl396YW0', 'isenterprise': 0, 'uid': 'MDAwMDAwMDAwMLSGz92Hz8lqhctyoQ'}
 </p>
                             </td>
                         </tr>
@@ -159,7 +151,7 @@ TypeError: eval() arg 1 must be a string, bytes or code object
                         </tr>
                         <tr>
                             <td colspan="3">
-                                Total: 8, Pass: 5, Error: 3 -- Duration: 2.42 s
+                                Total: 8, Pass: 6, Error: 2 -- Duration: 1.14 s
                             </td>
                         </tr>
                     </tbody>
