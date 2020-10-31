@@ -1,4 +1,4 @@
 requests==2.23.0
 openpyxl==3.0.4
 ddt==1.4.1
-HtmlTestRunner==1.2.1
+html-testRunner==1.2.1
